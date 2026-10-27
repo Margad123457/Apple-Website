@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apple Mockup</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== NAVBAR (shared by the whole page) ===== -->
+  <nav class="navbar">
+    <a class="logo" href="#">
+      <img src="./images/apple.png" alt="Logo">
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="#">Store</a></li>
+      <li><a href="#">Mac</a></li>
+      <li><a href="#">iPad</a></li>
+      <li><a href="#">iPhone</a></li>
+      <li><a href="#">Watch</a></li>
+      <li><a href="#">AirPods</a></li>
+      <li><a href="#">Vision</a></li>
+      <li><a href="#">Accessories</a></li>
+      <li><a href="#">TV &amp; Home</a></li>
+      <li><a href="#">Entertainment</a></li>
+      <li><a href="#">Music</a></li>
+      <li><a href="#">Support</a></li>
+    </ul>
+
+    <div class="nav-icons">
+      <a href="#"><img src="./images/search.png" alt="Search"></a>
+      <a href="#"><img src="./images/shopping-cart.png" alt="Cart"></a>
+      <a href="#"><img src="./images/menu.png" alt="Menu"></a>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ===== HERO: iPhone 18 Pro ===== -->
+    <section class="hero">
+      <h1>iPhone 18 Pro</h1>
+      <p>Pro further.</p>
+
+      <div class="hero-buttons">
+        <a class="hero-btn hero-btn-primary" href="#">Learn More</a>
+        <a class="hero-btn hero-btn-outline" href="#">Buy</a>
+      </div>
+
+      <div class="hero-image">
+        <picture>
+          <!-- Tablet, Desktop -->
+          <source media="(min-width: 734px)" srcset="./images/iphone18pro.png">
+          <!-- Mobile -->
+          <img src="./images/iphone18mobile.png" alt="iPhone 18 Pro">
+        </picture>
+      </div>
+    </section>
+
+    <!-- ===== iPhone Duo ===== -->
+    <section class="duo-page">
+      <div class="duo-content">
+        <h2>iPhone Duo</h2>
+        <p class="duo-tagline">Hello, hello.</p>
+        <p class="duo-availability">
+          Pre-order starting 5:00 a.m. PT on 10.16<br> Available starting 10.23
+        </p>
+        <div class="duo-buttons">
+          <a class="duo-button duo-button-primary" href="#">Learn more</a>
+          <a class="duo-button duo-button-outline" href="#">View pricing</a>
+        </div>
+
+        <div class="duo-product">
+          <img src="images/iphone-duo.png" alt="iPhone Duo unfolded in a person's hands">
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TILES (2 columns on desktop, 1 column on mobile) ===== -->
+    <div class="tiles">
+
+      <!-- Watch Series 12 -->
+      <section class="tile tile--dark tile--watch">
+        <h2 class="tile__title tile__title--watch"><img class="tile__logo" src="images/logo.svg" alt=""><span class="tile__name">WATCH</span><span>SERIES 12</span></h2>
+        <img class="tile__img" src="images/watch-series12.png" alt="Apple Watch Series 12 front and back, showing heart rate and green sensor">
+        <div class="tile__text">
+          <p class="tile__subtitle">The most accurate heart rate<br>sensing in a wearable.<sup>1</sup></p>
+          <div class="tile__buttons">
+            <a href="#" class="btn btn--primary">Learn more</a>
+            <a href="#" class="btn btn--outline">Buy</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- HomeView -->
+      <section class="tile">
+        <div class="tile__text">
+          <h2 class="tile__title"><img class="tile__logo" src="images/logo.svg" alt="">HomeView</h2>
+          <p class="tile__subtitle">Designed for life at home.</p>
+          <p class="tile__note">Available starting 11.13</p>
+          <div class="tile__buttons">
+            <a href="#" class="btn btn--primary">Learn more</a>
+            <a href="#" class="btn btn--outline">Pre-order</a>
+          </div>
+        </div>
+        <img class="tile__img" src="images/homeview.png" alt="HomeView smart display">
+      </section>
+
+      <!-- Watch Ultra 4 -->
+      <section class="tile tile--dark tile--ultra">
+        <div class="tile__text">
+          <h2 class="tile__title tile__title--watch"><img class="tile__logo" src="images/logo.svg" alt=""><span class="tile__name">WATCH</span><span>ULTRA 4</span></h2>
+          <p class="tile__subtitle">A battery you can’t outrun.</p>
+          <div class="tile__buttons">
+            <a href="#" class="btn btn--primary">Learn more</a>
+            <a href="#" class="btn btn--outline">Buy</a>
+          </div>
+        </div>
+        <img class="tile__img" src="images/watch-ultra4.png" alt="Apple Watch Ultra 4">
+      </section>
+
+      <!-- AirPods Pro 3 -->
+      <section class="tile">
+        <div class="tile__text">
+          <h2 class="tile__title">AirPods Pro 3</h2>
+          <p class="tile__subtitle">The world’s best in-ear<br>Active Noise Cancellation.</p>
+          <div class="tile__buttons">
+            <a href="#" class="btn btn--primary">Learn more</a>
+            <a href="#" class="btn btn--outline">Buy</a>
+          </div>
+        </div>
+        <img class="tile__img" src="images/airpods-pro3.png" alt="AirPods Pro 3">
+      </section>
+
+      <!-- Upgrade -->
+      <section class="tile">
+        <div class="tile__text">
+          <h2 class="tile__title"><img class="tile__logo" src="images/logo.svg" alt="">Upgrade</h2>
+          <p class="tile__subtitle">Love it. Lease it. Upgrade it.<sup>2</sup></p>
+          <div class="tile__buttons">
+            <a href="#" class="btn btn--primary">Learn more</a>
+          </div>
+        </div>
+        <img class="tile__img" src="images/phone.png" alt="iPhone">
+      </section>
+
+      <!-- Apple Card -->
+      <section class="tile">
+        <div class="tile__text">
+          <h2 class="tile__title"><img class="tile__logo" src="images/logo.svg" alt="">Card</h2>
+          <p class="tile__subtitle">Get up to 3% Daily Cash back<br>with every purchase.</p>
+          <div class="tile__buttons">
+            <a href="#" class="btn btn--primary">Learn more</a>
+            <a href="#" class="btn btn--outline">Apply now</a>
+          </div>
+        </div>
+        <img class="tile__img" src="images/card.png" alt="Apple Card">
+      </section>
+
+    </div>
+
+    <!-- ===== CAROUSEL ===== -->
+    <section class="ent">
+      <h2 class="ent__heading">Endless entertainment.</h2>
+
+      <div class="carousel">
+        <ul class="carousel__track">
+
+          <li class="slide">
+            <picture>
+              <source media="(max-width: 734px)" srcset="images/slide1-mobile.jpg">
+              <img class="slide__img" src="images/slide1.jpg" alt="">
+            </picture>
+            <div class="slide__info">
+              <a href="#" class="slide__btn">Stream now</a>
+              <p class="slide__text"><strong>Movie</strong><span class="slide__sep"> • </span>Based on the true story of the thrilling quest to summit Everest for the first time.</p>
+            </div>
+          </li>
+
+          <li class="slide">
+            <picture>
+              <source media="(max-width: 734px)" srcset="images/slide2-mobile.jpg">
+              <img class="slide__img" src="images/slide2.jpg" alt="">
+            </picture>
+            <div class="slide__info">
+              <a href="#" class="slide__btn">Stream now</a>
+              <p class="slide__text"><strong>Si-fi</strong><span class="slide__sep"> • </span>Mystery that compells you!</p>
+            </div>
+          </li>
+
+          <li class="slide">
+            <picture>
+              <source media="(max-width: 734px)" srcset="images/slide3-mobile.jpg">
+              <img class="slide__img" src="images/slide3.jpg" alt="">
+            </picture>
+            <div class="slide__info">
+              <a href="#" class="slide__btn">Stream now</a>
+              <p class="slide__text"><strong>Thriller</strong><span class="slide__sep"> • </span>Movie of the Month!</p>
+            </div>
+          </li>
+
+          <li class="slide">
+            <picture>
+              <source media="(max-width: 734px)" srcset="images/slide4-mobile.jpg">
+              <img class="slide__img" src="images/slide4.jpg" alt="">
+            </picture>
+            <div class="slide__info">
+              <a href="#" class="slide__btn">Stream now</a>
+              <p class="slide__text"><strong>F1</strong><span class="slide__sep"> • </span>Lewis Hamilton with lead history never seen!</p>
+            </div>
+          </li>
+
+          <li class="slide">
+            <picture>
+              <source media="(max-width: 734px)" srcset="images/slide5-mobile.jpg">
+              <img class="slide__img" src="images/slide5.jpg" alt="">
+            </picture>
+            <div class="slide__info">
+              <a href="#" class="slide__btn">Stream now</a>
+              <p class="slide__text"><strong>Documentary</strong><span class="slide__sep"> • </span>Fifa stars leading the world!</p>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+
+      <div class="dots"></div>
+
+      <ul class="cards">
+        <li class="card">
+          <img class="card__img" src="images/card1.jpg" alt="">
+          <span class="card__badge"><img src="images/logo.svg" alt="">Sports</span>
+          <p class="card__title">Today's Hits</p>
+          <a href="#" class="card__btn">Listen now</a>
+        </li>
+        <li class="card">
+          <img class="card__img" src="./images/card2.jpg" alt="">
+          <span class="card__badge"><img src="./images/logo.svg" alt="">Fitness+</span>
+          <p class="card__title">Programs</p>
+          <a href="#" class="card__btn">Watch now</a>
+        </li>
+        <li class="card">
+          <img class="card__img" src="images/card3.jpg" alt="">
+          <span class="card__badge"><img src="./images/logo.svg" alt="">Music</span>
+          <p class="card__title">Hello Kitty Island Adventure</p>
+          <a href="#" class="card__btn">Play now</a>
+        </li>
+        <li class="card">
+          <img class="card__img" src="images/card4.jpg" alt="">
+          <span class="card__badge"><img src="./images/logo.svg" alt="">Arcade</span>
+          <p class="card__title">Miley: The Zane Lowe Interview</p>
+          <a href="#" class="card__btn">Listen now</a>
+        </li>
+        <li class="card">
+          <img class="card__img" src="images/card5.jpg" alt="">
+          <span class="card__badge"><img src="./images/logo.svg" alt="">Music</span>
+          <p class="card__title">Join the Team with “Ted Lasso”</p>
+          <a href="#" class="card__btn">Watch now</a>
+        </li>
+        <li class="card">
+          <img class="card__img" src="images/card6.jpg" alt="">
+          <span class="card__badge"><img src="./images/logo.svg" alt="">Arcade</span>
+          <p class="card__title">New game</p>
+          <a href="#" class="card__btn">Play now</a>
+        </li>
+      </ul>
+    </section>
+
+  </main>
+
+  <script>
+    const track = document.querySelector(".carousel__track");
+    const slides = Array.from(track.children);
+    const dotsWrap = document.querySelector(".dots");
+    const cards = document.querySelector(".cards");
+    const cardItems = Array.from(cards.children);
+    const DURATION = 5000; // must match --slide-duration in style.css
+
+    let index = 0;
+    let timer;
+    let userScrollingCards = false;
+    let cardsTimer;
+
+    // Scroll snapping would fight the synced scrolling, so turn it off here
+    cards.style.scrollSnapType = "none";
+    cardItems.forEach((c) => (c.style.scrollSnapAlign = "none"));
+
+    // Create one dot per slide
+    slides.forEach((_, i) => {
+      const dot = document.createElement("button");
+      dot.className = "dot";
+      dot.setAttribute("aria-label", `Slide ${i + 1}`);
+      dot.addEventListener("click", () => goTo(i));
+      dotsWrap.appendChild(dot);
+    });
+    const dots = Array.from(dotsWrap.children);
+
+    // Center the active slide (and move the cards row with it)
+    function update(fromCards = false) {
+      const slideW = slides[0].offsetWidth;
+      const gap = parseFloat(getComputedStyle(track).gap);
+      const viewW = track.parentElement.offsetWidth;
+      const offset = index * (slideW + gap) - (viewW - slideW) / 2;
+
+      track.style.transform = `translateX(${-offset}px)`;
+      slides.forEach((s, i) => s.classList.toggle("is-active", i === index));
+
+      dots.forEach((d) => d.classList.remove("is-active"));
+      void dotsWrap.offsetWidth; // restart the dot animation
+      dots[index].classList.add("is-active");
+
+      if (!fromCards) syncCards();
+    }
+
+    // Carousel -> cards: scroll the cards row to the matching position
+    function syncCards() {
+      const max = cards.scrollWidth - cards.clientWidth;
+      if (max <= 0) return;
+      const progress = index / (slides.length - 1);
+      cards.scrollTo({ left: progress * max, behavior: "smooth" });
+    }
+
+    // Cards -> carousel: when the user scrolls the cards, move the carousel
+    ["pointerdown", "touchstart", "wheel"].forEach((ev) =>
+      cards.addEventListener(ev, () => (userScrollingCards = true), { passive: true })
+    );
+
+    cards.addEventListener("scroll", () => {
+      if (!userScrollingCards) return;
+
+      const max = cards.scrollWidth - cards.clientWidth;
+      if (max > 0) {
+        const i = Math.round((cards.scrollLeft / max) * (slides.length - 1));
+        if (i !== index) {
+          index = i;
+          update(true);     // move carousel, don't re-scroll the cards
+          startAutoplay();
+        }
+      }
+
+      clearTimeout(cardsTimer);
+      cardsTimer = setTimeout(() => (userScrollingCards = false), 150);
+    });
+
+    function goTo(i) {
+      index = (i + slides.length) % slides.length;
+      update();
+      startAutoplay();
+    }
+
+    function startAutoplay() {
+      clearInterval(timer);
+      timer = setInterval(() => goTo(index + 1), DURATION);
+    }
+
+    // Click a side slide to jump to it
+    slides.forEach((slide, i) => {
+      slide.addEventListener("click", (e) => {
+        if (i !== index) {
+          e.preventDefault();
+          goTo(i);
+        }
+      });
+    });
+
+    // Swipe
+    let startX = null;
+    track.addEventListener("pointerdown", (e) => (startX = e.clientX));
+    track.addEventListener("pointerup", (e) => {
+      if (startX === null) return;
+      const diff = e.clientX - startX;
+      if (Math.abs(diff) > 50) goTo(diff < 0 ? index + 1 : index - 1);
+      startX = null;
+    });
+
+    // Re-center on resize
+    window.addEventListener("resize", () => {
+      track.classList.add("no-anim");
+      update();
+      requestAnimationFrame(() => track.classList.remove("no-anim"));
+    });
+
+    // Wait for images/layout before the first centering
+    window.addEventListener("load", update);
+    update();
+    startAutoplay();
+  </script>
+</body>
+</html>
